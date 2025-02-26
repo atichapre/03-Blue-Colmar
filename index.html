@@ -72,7 +72,7 @@
       <section class="information bg-[rgb(243,245,245)]">
         <div class="grid grid-cols-2 max-sm:grid-cols-1">
           <div class="px-[24px] py-[32px] max-sm:bg-none max-sm:hidden">
-            <img src="./images/information-main.jpg" class="" />
+            <img src="./images/information-main.jpg"/>
             <h2 class="text-4xl font-bold mt-[32px] mb-[24px]">
               It doesn't hurt to keep practicing
             </h2>
@@ -90,8 +90,12 @@
             <div class="flex flex-row border-b-2 border-b-[#e0e2e2] max-sm:flex-col max-sm:mx-[16px] max-sm:mb-[64px] max-sm:border-hidden">
               <img
                 src="/images/information-orientation.jpg"
-                class="w-[35%] h-auto p-[16px] max-sm:p-0 max-sm:w-auto max-sm:h-60 max-sm:object-cover"
+                class="w-[35%] h-auto p-[16px] max-sm:p-0 max-sm:w-auto max-sm:h-60 max-sm:object-cover max-sm:hidden"
               />
+              <img
+              src="/images/information-orientation-mobile.jpg"
+              class="w-[35%] h-auto p-[16px] max-sm:p-0 max-sm:w-auto max-sm:h-60 max-sm:object-cover sm:hidden"
+            />
               <div class="w-[65%] flex flex-col justify-center max-sm:w-auto max-sm:p-[16px]">
                 <h3 class="text-2xl pb-[8px] font-bold">Orientation date</h3>
                 <p class="pb-[8px]">Tue 10/11 & Wed 10/12: 8am-3am</p>
@@ -103,8 +107,12 @@
             <div class="flex flex-row max-sm:flex-col max-sm:mx-[16px] max-sm:mb-[64px]">
               <img
                 src="/images/information-campus.jpg"
-                class="w-[35%] h-auto p-[16px] max-sm:p-0 max-sm:w-auto max-sm:h-60 max-sm:object-cover"
+                class="w-[35%] h-auto p-[16px] max-sm:p-0 max-sm:w-auto max-sm:h-60 max-sm:object-cover max-sm:hidden"
               />
+              <img
+              src="/images/information-campus-mobile.jpg"
+              class="w-[35%] h-auto p-[16px] max-sm:p-0 max-sm:w-auto max-sm:h-60 max-sm:object-cover sm:hidden"
+            />
               <div class="w-[65%] flex flex-col justify-center max-sm:w-auto max-sm:p-[16px]">
                 <h3 class="text-2xl pb-[8px] font-bold">Our campus</h3>
                 <p class="pb-[8px]">Find which campus is close by you</p>
@@ -116,8 +124,12 @@
             <div class="bg-[#d8d8d8] max-sm:bg-inherit flex flex-row max-sm:flex-col max-sm:mx-[16px] max-sm:mb-[32px]">
               <img
                 src="/images/information-guest-lecture.jpg"
-                class="w-[35%] h-auto p-[16px] max-sm:p-0 max-sm:w-auto max-sm:h-60 max-sm:object-cover"
+                class="w-[35%] h-auto p-[16px] max-sm:p-0 max-sm:w-auto max-sm:h-60 max-sm:object-cover max-sm:hidden"
               />
+              <img
+              src="/images/information-guest-lecture-mobile.jpg"
+              class="w-[35%] h-auto p-[16px] max-sm:p-0 max-sm:w-auto max-sm:h-60 max-sm:object-cover sm:hidden"
+            />
               <div class="w-[65%] flex flex-col justify-center max-sm:w-auto max-sm:p-[16px]">
                 <h3 class="text-2xl pb-[8px] font-bold">Our guest lecture</h3>
                 <p class="pb-[8px]">
@@ -191,22 +203,22 @@
         </div>
       </section>
       <section class="thesis bg-[rgb(243,245,245)]">
-        <h2 class="text-4xl font-bold py-[32px] text-center">Thesis exhibit</h2>
-        <div class="grid grid-cols-2">
+        <h2 class="text-4xl font-bold py-[32px] text-center max-sm:pb-[16px] max-sm:pt-[32px]">Thesis exhibit</h2>
+        <div class="grid grid-cols-2 max-sm:grid-cols-1">
           <div class="px-[24px]">
-            <video class="w=[60%] pb-[24px]">
+            <video class="pb-[24px] max-sm:object-cover">
               <source src="./videos/thesis.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            <h2 class="text-2xl font-semibold mb-[8px]">Reimagine urban</h2>
-            <p class="mb-[32px] text-md">
+            <h2 class="text-2xl font-semibold mb-[8px] max-sm:hidden"">Reimagine urban</h2>
+            <p class="mb-[32px] text-md max-sm:hidden">
               "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Perspiciatis neque, ab aut incidunt corrupti perferendis alias,
               commodi impedit quibusdam illo, beatae nesciunt quas ullam. At
               magni a provident animi tempora?"
             </p>
           </div>
-          <div class="flex flex-col my-[32px]">
+          <div class="flex flex-col my-[32px] max-sm:hidden">
             <div class="flex flex-row bg-[#d8d8d8]">
               <img
                 src="/images/thesis-fisma.jpg"
@@ -237,10 +249,10 @@
     </main>
     <footer>
       <div
-        class="grid grid-cols-2 text-md mx-[24px] py-[16px] border-t-2 border-t-[#e0e2e2]"
+        class="grid grid-cols-2 text-md mx-[24px] py-[16px] border-t-2 border-t-[#e0e2e2] max-sm:grid-cols-1"
       >
         <p>© 2016 Colmar Academy. All right reserved</p>
-        <div class="flex flex-row justify-end space-x-3">
+        <div class="flex flex-row justify-end space-x-3 max-sm:hidden">
           <a>Terms</a>
           <a>Privacy</a>
         </div>
